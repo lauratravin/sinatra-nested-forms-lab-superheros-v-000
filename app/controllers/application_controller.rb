@@ -10,7 +10,7 @@ class App < Sinatra::Base
     end
 
     post '/new' do
-       binding.pry
+    
     @team=  Team.new(name: params[:team][:name],motto: params[:team][:motto])
 
       params[:team][:members].each do |m|
