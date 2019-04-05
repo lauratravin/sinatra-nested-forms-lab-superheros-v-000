@@ -17,7 +17,7 @@ class App < Sinatra::Base
         Hero.new(m)
       end
 
-      binding.pry
+      # binding.pry
 
       @heros= Hero.all
 
